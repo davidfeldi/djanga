@@ -31,10 +31,18 @@ steps:
     #build-arguments:
     #  - FOO=BAR
 
-  clone-step-name:
+   clone-step-1:
     type: git-clone
     repo: https://${{stash_user}}:${{stash_password}}@stash-internal.codefresh.io/scm/cod/docker-node-hello-world.git
     revision: master
+    
+  clone-step-2:
+    type: git-clone
+    repo: https://github.com/codefresh-io/docker-node-hello-world
+    revision: master
+    credentials:
+      username: ${{github_user}}
+      password: ${{github_password}}
 
   push-dockerhub:
     type: push
