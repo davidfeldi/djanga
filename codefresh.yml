@@ -33,11 +33,8 @@ steps:
 
   clone-step-name:
     type: git-clone
-    repo: https://stash-internal.codefresh.io/scm/cod/docker-node-hello-world.git
+    repo: https://${{stash_user}}:${{stash_password}}@stash-internal.codefresh.io/scm/cod/docker-node-hello-world.git
     revision: master
-    credentials: 
-      username: ${{stash_user}}
-      password: ${{stash_password}}
 
   push-dockerhub:
     type: push
