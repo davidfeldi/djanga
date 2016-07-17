@@ -39,7 +39,6 @@ steps:
       username: ${{stash_user}}
       password: ${{stash_password}}
 
-
   push-dockerhub:
     type: push
     candidate: ${{build-djanga}}
