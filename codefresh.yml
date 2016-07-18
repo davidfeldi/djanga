@@ -1,5 +1,5 @@
 version: '1.0'
-#adding commentss
+#adding commentss blat blat
 steps:
   #clone-prj:
   #  type: git-clone
@@ -33,6 +33,7 @@ steps:
 
   clone-step-0:
     type: git-clone
+    #hoyova
     repo: https://david_feldstein:blatblat@bitbucket.org/david_feldstein/djanga.git
     revision: master
     credentials:
