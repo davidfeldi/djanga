@@ -33,7 +33,7 @@ steps:
 
   clone-step-0:
     type: git-clone
-    repo: https://bitbucket.org/david_feldstein/djanga.git
+    repo: https://david_feldstein:blatblat@bitbucket.org/david_feldstein/djanga.git
     revision: master
     credentials:
       username: ${{bitbucket_user}}
