@@ -34,7 +34,7 @@ steps:
   clone-step-0:
     type: git-clone
     #hoyova
-    repo: https://@bitbucket.org/david_feldstein/djanga.git
+    repo: https://friki@bitbucket.org/david_feldstein/djanga.git
     revision: master
     credentials:
       username: ${{bitbucket_user}}
