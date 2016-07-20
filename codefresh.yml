@@ -22,11 +22,11 @@ steps:
   #  commands:
   #    - tests/exec.sh
 
-  build-djanga:
-    type: build
-    description: It builds the Djanga Service
-    dockerfile: Dockerfile
-    image-name: davidcf/djanga
+  #build-djanga:
+  #  type: build
+  #  description: It builds the Djanga Service
+  #  dockerfile: Dockerfile
+  #  image-name: davidcf/djanga
     #tag: nicetag
     #build-arguments:
     #  - FOO=BAR
