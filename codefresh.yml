@@ -26,8 +26,27 @@ steps:
     type: build
     description: It builds the Djanga Service
     dockerfile: Dockerfile
-    image-name: noamt/djanga
+    image-name: davidfeldi/djanga-regular
     tag: nicetag
+    #build-arguments:
+    #  - FOO=BAR
+  
+   clone-step-1:
+    type: git-clone
+    #hoyova
+    repo: https://friki@bitbucket.org/david_feldstein/djanga.git
+    revision: master
+    credentials:
+      username: ${{bitbucket_user}}
+      password: ${{bitbucket_password}}
+  
+  build-djanga-1:
+    type: build
+    description: It builds the Djanga Service
+    dockerfile: Dockerfile
+    image-name: davidfeldi/djanga-bitbucket
+    tag: nicetag
+    working-directory: ${{clone-step-1}}
     #build-arguments:
     #  - FOO=BAR
 
